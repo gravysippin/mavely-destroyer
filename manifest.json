@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Mavely Link Stripper",
+  "version": "1.0.0",
+  "description": "Strips tracking parameters from affiliate links",
+  "permissions": [
+    "storage",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "*://mave.ly/*",
+    "*://mavely.co/*",
+    "*://mavely.app/*",
+    "*://mavely.app.link/*",
+    "*://*.joinmavely.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Mavely Decoder"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
