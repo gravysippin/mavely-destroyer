@@ -1,6 +1,6 @@
 # Mavely Link Stripper
 
-A Chrome extension that automatically decodes Mavely affiliate links and redirects you to the actual destination, with tracking parameters removed.
+A Chrome extension that automatically destroys Mavely affiliate links and redirects you to the actual destination, with tracking parameters removed.
 
 ## What it does
 
